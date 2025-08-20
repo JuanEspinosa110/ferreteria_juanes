@@ -1,0 +1,386 @@
+body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #111618;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 5px;
+}
+
+.icono-login {
+    font-size: 1.8rem;
+    color: #333;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icono-login:hover {
+    color: #007bff;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 900px;
+    height: 500px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 80%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #009dff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-hero:hover {
+    background-color: #007acc;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.categoria {
+    text-decoration: none;
+    color: #111618;
+    text-align: center;
+    border: 1px solid #dbe3e6;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.categoria img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.categoria p {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #111618;
+    color: #fff;
+    padding: 30px 40px 10px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer-contacto {
+    flex: 1 1 200px;
+}
+
+.footer-contacto h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.footer-contacto p,
+.footer-contacto a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-contacto a:hover {
+    color: #fff;
+}
+
+.footer-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contacto li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+    background-color: #fff;
+    color: #111618;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f3f5;
+    padding: 15px 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #111618;
+}
+
+.logo-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+input {
+    height: 50px;
+    border: 1px solid #dbe3e6;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #111618;
+}
+
+input::placeholder {
+    color: #60808a;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #60808a;
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor: pointer;
+
+.btn-login {
+    background-color: #333;
+    color: rgb(175, 175, 175)
+
+}
+
+.btn-login:hover {
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+}
+
+.signup-link {
+    font-size: 14px;
+    color: #60808a;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #60808a;
+    text-decoration: underline;
+}
+
+/* ====== VISTA ADMIN ====== */
+
+.header_admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #333;
+    color: white;
+}
+
+.logo_admin {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav_admin a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.acciones_admin {
+    display: flex;
+    align-items: center;
+}
+
+.acciones_admin a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.acciones_admin a i {
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+
+.contenedor-categorias_admin {
+    display: block;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.categoria_admin {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.categoria_admin img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin: 5px 0;
+}
+
+.categoria_admin img:hover {
+    transform: scale(1.05);
+}
+
+.categoria_admin p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer_admin {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
