@@ -3,91 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferretería Juanes</title>
+    <title>Login</title>
     <link rel="stylesheet" href="controller/css/estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <i class="bi bi-tools"></i>
-            <span>Ferretería Juanes</span>
-        </div>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Categorías</a>
-            <a href="#">Contacto</a>
+    <header class="header">
+        <div class="logo-container">
             
-        </nav>
-
-        <a href="login.html" class="icono-login">
-            <i class="bi bi-person-circle"></i>
-        </a>
-
-        
+            <h2>Ferreteria Juanes</h2>
+        </div>
     </header>
 
-    <section class="hero">
-        <img src="controller/IMG/imagen_inicio.png" alt="Imagen principal">
-        <div class="hero-text">
-            <h1>Encuentra todo para tus proyectos</h1>
-            <p>La mejor selección de herramientas y materiales de construcción a tu alcance.</p>
-            <a href="#" class="btn-hero">Explorar productos</a>
-        </div>
-    </section>
+    <main class="container">
+        <form class="login-box" action="controller/inicio.php" method="POST">
+            <h2>BIENVENIDO DE NUEVO</h2>
 
-    <main>
-        <h1 class="titulo">Categorías</h1>
-        <div class="categorias">
-            <a href="materiales.html" class="categoria">
-                <img src="controller/IMG/materiales.webp" alt="Materiales">
-                <p>Materiales</p>
-            </a>
-            <a href="herramientas.html" class="categoria">
-                <img src="controller/IMG/herramientas.png" alt="Herramientas">
-                <p>Herramientas</p>
-            </a>
-            <a href="pinturas.html" class="categoria">
-                <img src="controller/IMG/pinturas.jpg" alt="Pinturas">
-                <p>Pinturas</p>
-            </a>
-            <a href="electricidad.html" class="categoria">
-                <img src="controller/IMG/electricidad.webp" alt="Electricidad">
-                <p>Electricidad</p>
-            </a>
-        </div>
+            <label for="usuario">usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+
+            <label for="clave">Clave</label>
+            <input type="password" id="clave" name="clave" placeholder="ingrese su clave" required>
+
+            <p class="forgot-password">Forgot your password?</p>
+
+            <input type="submit" name="inicio" id="inicio" value="Validar" classs="btn-login">
+
+        </form>
     </main>
-
-    <footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <h4>Ferretería Juanes</h4>
-            <p>Tu aliado en materiales, herramientas y soluciones para el hogar y la industria.</p>
-        </div>
-
-        <div class="footer-contacto">
-            <h4>Enlaces rápidos</h4>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="materiales.html">Materiales</a></li>
-                <li><a href="herramientas.html">Herramientas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h4>Contacto</h4>
-            <p>📞 +57 300 123 4567</p>
-            <p>📧 contacto@ferreteriajuanes.com</p>
-            <p>📍 Calle 123 #45-67, Bogotá</p>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2025 Ferretería Juanes. Todos los derechos reservados.</p>
-    </div>
-</footer>
-
 </body>
 </html>

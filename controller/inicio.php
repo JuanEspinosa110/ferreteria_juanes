@@ -11,17 +11,17 @@ if ($_POST["inicio"]) {
     $usuario = $_POST["usuario"];
     $clave = htmlentities(addslashes(($_POST["clave"])));
 
-    $sql = $con -> prepare("SELECT * FROM users WHERE usuario = '$usuario'  AND contrasena = '$clave' ");
+    $sql = $con -> prepare("SELECT * FROM usuario WHERE nombre = '$usuario'  AND contrasena = '$clave' ");
     $sql->execute();
     $_fila = $sql->fetch();
 
     if ($_fila) {
 
-        $_SESSION['doc_us'] = $fila['doc_us'];
+        $_SESSION['documento'] = $fila['documento'];
         $_SESSION['tipo'] = $_fila['id_tip_us'];
 
         if ($_SESSION['tipo'] == 1) {
-            header("Location: ../model/admin/index.php");
+            header("Location: ../model/admin/vista_admin.php");
         }
 
     }
